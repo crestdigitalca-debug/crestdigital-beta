@@ -17,7 +17,6 @@
 body{
   background-color: #13171C;
   overflow-x: hidden;
-
 }
 
 .preloader {
@@ -201,7 +200,7 @@ header{
     width: auto;
     display: flex;
     justify-content: space-between;
-    width: 10vw;
+    width: 100%;
     font-size: 20px;
     align-items: center;
     padding: 7px 20px;
@@ -237,7 +236,7 @@ header{
   }
 
       .chatwUs{
-       width: 12vw;
+       width: 100%;
     }
 
     .heroBtn:hover .btnInnerBtn{
@@ -340,7 +339,6 @@ header{
 
 .svgTop{
   margin-left: 22%;
-  margin-top: -5%;
   width: 100%;
 }
 
@@ -357,14 +355,6 @@ header{
 {
   margin-top: 20vh;
   width: 100%;
-}
-
-.svgBack{
-
-  z-index: -1;
-  position: absolute;
-  margin-top: -8vh;
-  margin-left: 40vh;
 }
 
 .aboutUs--inner{
@@ -409,9 +399,6 @@ header{
   }
 
 }
-
-
-
   .mainText{
   h2{
     color: #262D37;
@@ -426,7 +413,7 @@ header{
     color: #A129FF;
     text-shadow: 0px 0px 40px rgba(161, 41, 255, 0.69);
     font-weight: 900;
-    font-size: 34px;
+    font-size: 2vw;
     position: absolute;
     top: 0;
     text-align: center;
@@ -642,13 +629,49 @@ header{
   }
 }
 
-.svgLogoCrest{
-  width: 80%;
+.crestAllSvg{
   position: absolute;
   top: 0;
-  margin-top: -40vh;
+  width: 100% !important;
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: green !important;
+
+}
+
+.svgLogoCrest{
+  width: 50%;
+  position: relative;
+  margin-left: 15%;
+  top: 0;
   opacity: 0.5;
   z-index: -3 !important; 
+}
+
+.crestMidSvg{
+    width: 50% !important;
+  position: relative;
+  margin-left: 15%;
+  top: 0;
+  opacity: 0.5;
+  z-index: -3 !important; 
+}
+
+.crestRightSvg{
+    width: 20% !important;
+  position: relative;
+  margin-left: 60%;
+  margin-top: -5%;
+  top: 0;
+  opacity: 0.5;
+  z-index: -3 !important; 
+}
+.crestFirstSvg{
+  margin-top: -15svh;
+  margin-left: -5%;
+  width: 20%;
 }
 
 .quotationmark
@@ -669,6 +692,21 @@ header{
   margin-top: 3vh;
   width: 100%;
 
+}
+
+.svgAboutUs{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+}
+
+.svgBack{
+  z-index: -1;
+  position: absolute;
+  width: 60%;
 }
 
 .clientImg{
@@ -929,3 +967,251 @@ background: #2d173b;
       position: absolute;
       bottom: 0;
     }
+
+@media (max-width: 1024px) {
+  .navButtonSection{
+    display: none;
+  }
+
+  .ourWork--content{
+  margin-top: 0px;
+  width: 100%;
+  }
+
+  /* --- Sadece Mobil Ekranlar (Örn: max 768px) --- */
+@media (max-width: 768px) {
+    /* ... diğer mobil stilleri ... */
+    .aboutUs--section{
+      width: 90% !important;
+    }
+
+      .ourWork--content{
+  margin-top: -60px;
+  width: 100%;
+  }
+
+    .aboutUs--inner{
+      height: 40vh;
+    }
+    .ourWork--inner{
+      .mainText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    h2{
+    color: #262D37;
+    font-weight: 900;
+    font-size: 30vw;
+    position: relative;
+  }
+
+  p{
+    color: #A129FF;
+    text-shadow: 0px 0px 40px rgba(162, 41, 255, 0.048);
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    margin-top: 27%;
+    text-align: center;
+    width: 100%;
+    left: 3%;
+    right: 0%;
+    top: 0%;
+    text-align: center !important;
+  }
+  }
+    }
+
+
+  .aboutUs--section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  .mainText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+    color: #262D37;
+    font-weight: 900;
+    font-size: 16vw;
+    position: relative;
+  }
+
+  p{
+    color: #A129FF;
+    text-shadow: 0px 0px 40px rgba(162, 41, 255, 0.048);
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    margin-top: 12%;
+    text-align: center;
+    width: 100%;
+    left: -2%;
+    right: 0%;
+    top: 0%;
+    text-align: center !important;
+  }
+  }
+}
+
+.leftAbout{
+  margin-top: -150px;
+  width: 100%;
+  p{
+    font-size: 2vw; 
+    text-align: center;
+  }
+}
+    
+    body{
+      overflow-x: hidden !important;
+    }
+
+    .VerticalLine{
+      display: none; /* Mobilde dikey çizgiyi gizle */
+    }
+    .workCard{
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    .preText h2{
+      font-size: 3vw !important;
+      margin-right: 4vw;
+      margin-top: -4vw;
+    }
+
+    .socialMedia{
+      display: none;
+    }
+    .slider{
+      margin: 0 !important;
+      margin: 0px;
+      transform: rotate(270deg);
+    }
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 60vh;
+  }
+
+  .quotationmark{
+    display: none !important;
+  }
+
+.client--gallery{
+  margin: 0px;
+  margin-top: 20px;
+  .imgOut{
+    width: 80px;
+    height: 70px;
+
+    img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    margin-right: 0px;
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+    }
+  }
+ 
+}
+  .textSection--client{
+    p{
+      display: -webkit-box;          
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;       
+        overflow: hidden;            
+        text-overflow: ellipsis;     
+         width: 100%;
+    }  
+  }
+
+   .galleryArea {
+        display: flex;            
+        justify-content: left;  
+        flex-wrap: wrap;          
+        height: auto;             
+        gap: 10px;                
+        width: 90%;               
+    }
+
+    /* Önce tüm imgOut'ları gizle (More butonu hariç) */
+    .galleryArea .imgOut:not(.moreBtn) {
+        display: none;
+    }
+
+    /* Sonra ilk iki imgOut'u tekrar görünür yap */
+    .galleryArea .imgOut:nth-child(1),
+    .galleryArea .imgOut:nth-child(2) {
+        display: block; /* Veya inline-block */
+        width: 80px; /* Mobil için boyut */
+        height: 70px; /* Mobil için boyut */
+        margin-bottom: 10px; /* Altlarına buton için boşluk bırak */
+    }
+
+    /* "More..." butonunu içeren linkin (a) blok gibi davranmasını sağla */
+    .galleryArea a {
+       display: block; /* Blok seviyesine getir */
+       width: 100%; /* Konteynerin tamamını kaplasın (wrap için gerekli) */
+       text-decoration: none;
+       margin-top: 10px; /* Üstündeki resimlerle arasına boşluk koy */
+    }
+
+    .textSection--client h1{
+      font-size: 6vw !important;
+    }
+
+    /* "More..." butonunun stilini ayarla */
+    .galleryArea .imgOut.moreBtn {
+        margin-left: -2% !important;
+        display: flex; /* İçeriği (p ve div) düzgün hizalamak için flex */
+        width: 80% !important; /* Mobil için istediğin genişlik */
+        height: 50px; /* Mobil için yükseklik */
+        padding: 0 15px; /* İç boşluk */
+        margin: 0 auto; /* Butonu yatayda ortala */
+        box-sizing: border-box; /* Padding dahil hesaplama */
+        align-items: center; /* Dikey ortala */
+        justify-content: space-between; /* İçerik arası boşluk */
+    }
+     .galleryArea .imgOut.moreBtn p {
+        font-size: 16px;
+    }
+     .galleryArea .imgOut.moreBtn .btnInnerBtn {
+        width: 25px;
+        height: 25px;
+    }
+     .galleryArea .imgOut.moreBtn .btnInnerBtn i{
+        font-size: 18px;
+    }
+
+    .servicesProvided--card{
+      display: flex;
+      flex-direction: column !important;
+    }
+
+    .servicesLine{
+      flex-direction: column;
+    }
+
+    .cardOut{
+      width: 100%;
+    }
+}
+}

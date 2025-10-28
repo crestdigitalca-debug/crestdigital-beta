@@ -116,3 +116,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- INITIALIZE SLIDER ---
     showSlide(currentIndex);
 });
+
+
